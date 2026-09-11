@@ -109,6 +109,67 @@ button:hover {
     background-color: #246B45;
 }
 
+.error-message {
+    display: block;
+    color: #B00020;
+    font-size: 0.85em;
+    margin-top: 4px;
+    min-height: 1.1em;
+}
+
+.input-error {
+    border: 2px solid #B00020;
+}
+
+#form-success-message {
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+#interest-summary:not(:empty) {
+    background-color: #E8F3EC;
+    border-left: 4px solid #2E8B57;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.interest-btn {
+    margin-left: 10px;
+    font-size: 0.85em;
+    padding: 6px 12px;
+    width: auto;
+}
+
+#interest-list {
+    list-style: none;
+    padding: 0;
+}
+
+#interest-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E8F3EC;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.remove-interest-btn {
+    background-color: #B00020;
+    font-size: 0.8em;
+    padding: 6px 10px;
+    width: auto;
+}
+
+.remove-interest-btn:hover {
+    background-color: #7d0016;
+}
+
+#clear-interests-btn {
+    width: auto;
+}
+
 footer {
     background-color: #2E8B57;
     color: white;

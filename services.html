@@ -52,20 +52,43 @@
     <section aria-labelledby="volunteer-heading">
       <h2 id="volunteer-heading">Volunteer Roles</h2>
       <img src="rescue-volunteer_c.png" alt="A volunteer walking a dog outside the shelter">
-      <p>We have volunteer roles for every schedule and skill level:</p>
-      <ul>
-        <li><strong>Dog Walker:</strong> Walk and exercise animals at the shelter</li>
-        <li><strong>Event Helper:</strong> Support adoption events and fundraisers</li>
-        <li><strong>Administrative Support:</strong> Help with paperwork and phone calls</li>
-        <li><strong>Transport Driver:</strong> Drive animals to vet visits or foster homes</li>
+      <p>We have volunteer roles for every schedule and skill level. Click
+      "Add to My Interests" on any role below to save it &mdash; we will remember
+      your choices when you visit our Contact page.</p>
+      <ul id="volunteer-roles-list">
+        <li>
+          <strong>Dog Walker:</strong> Walk and exercise animals at the shelter
+          <button type="button" class="interest-btn" data-role="Dog Walker">Add to My Interests</button>
+        </li>
+        <li>
+          <strong>Event Helper:</strong> Support adoption events and fundraisers
+          <button type="button" class="interest-btn" data-role="Event Helper">Add to My Interests</button>
+        </li>
+        <li>
+          <strong>Administrative Support:</strong> Help with paperwork and phone calls
+          <button type="button" class="interest-btn" data-role="Administrative Support">Add to My Interests</button>
+        </li>
+        <li>
+          <strong>Transport Driver:</strong> Drive animals to vet visits or foster homes
+          <button type="button" class="interest-btn" data-role="Transport Driver">Add to My Interests</button>
+        </li>
       </ul>
       <p>Ready to get started? Visit our <a href="contact.html">Contact</a> page to
       request a volunteer or foster spot.</p>
+    </section>
+
+    <section aria-labelledby="my-interests-heading" id="my-interests-section">
+      <h2 id="my-interests-heading">My Volunteer Interests</h2>
+      <p id="interest-empty-message">You have not selected any volunteer roles yet. Click "Add to My Interests" above to save one.</p>
+      <ul id="interest-list"></ul>
+      <button type="button" id="clear-interests-btn">Clear My Interests</button>
     </section>
   </main>
 
   <footer>
     <p>Twin Cities Animal Rescue &mdash; Serving the Twin Cities community since 2010.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
